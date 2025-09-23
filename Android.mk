@@ -16,5 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
+ifeq ($(filter $(TARGET_DEVICE), penangf fogorow lamu),$(TARGET_DEVICE))
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
-
+endif
