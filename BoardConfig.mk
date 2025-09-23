@@ -57,6 +57,20 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 
+# A/B
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    system \
+    system_ext \
+    product \
+    vendor \
+    vbmeta \
+    vendor_boot \
+    vbmeta_system \
+    vbmeta_vendor
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 67108864
