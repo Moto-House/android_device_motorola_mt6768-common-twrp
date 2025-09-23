@@ -16,6 +16,10 @@
 
 DEVICE_PATH := device/motorola/mt6768
 
+# Build Hacks
+ALLOW_MISSING_DEPENDENCIES := true
+BUILD_BROKEN_DUP_RULES := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
