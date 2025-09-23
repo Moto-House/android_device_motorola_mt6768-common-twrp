@@ -24,6 +24,9 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit from penangf device
 $(call inherit-product, device/motorola/mt6768/device.mk)
 
+# dependencies
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/motorola/mt6768/prebuilts/penangf,recovery/root)
+
 PRODUCT_DEVICE := mt6768
 PRODUCT_NAME := twrp_penangf
 PRODUCT_BRAND := motorola

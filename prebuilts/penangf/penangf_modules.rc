@@ -1,0 +1,5 @@
+# Modules
+on early-init
+    insmod /vendor/lib/modules/chipone9916.ko
+    insmod /vendor/lib/modules/ilitek.ko
+    insmod /vendor/lib/modules/omnivision_tcm.ko
