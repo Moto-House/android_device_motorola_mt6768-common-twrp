@@ -16,6 +16,6 @@
 
 
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/twrp_penangf.mk
-    $(LOCAL_DIR)/twrp_fogorow.mk
+    $(LOCAL_DIR)/twrp_penangf.mk \
+    $(LOCAL_DIR)/twrp_fogorow.mk \
     $(LOCAL_DIR)/twrp_lamu.mk
