@@ -32,4 +32,4 @@ PRODUCT_NAME := twrp_penangf
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := mt6768
 PRODUCT_MANUFACTURER := motorola
-
+MOTOROLA_MODEL := penangf

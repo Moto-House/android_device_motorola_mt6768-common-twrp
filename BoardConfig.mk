@@ -55,16 +55,16 @@ BOARD_HEADER_SIZE := 2128
 BOARD_DTB_SIZE := 147804
 BOARD_DTB_OFFSET := 0x0bc08000
 
-ifeq ($(TARGET_DEVICE),penangf)
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtbs/penangf_dtb.img
+ifeq ($(MOTOROLA_MODEL),penangf)
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtbs/penangf_dtb.img
 endif
 
-ifeq ($(TARGET_DEVICE),fogorow)
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtbs/fogorow_dtb.img
+ifeq ($(MOTOROLA_MODEL),fogorow)
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtbs/fogorow_dtb.img
 endif
 
-ifeq ($(TARGET_DEVICE),lamu)
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtbs/lamu_dtb.img
+ifeq ($(MOTOROLA_MODEL),lamu)
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtbs/lamu_dtb.img
 endif
 
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
