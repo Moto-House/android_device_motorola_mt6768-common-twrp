@@ -1,0 +1,4 @@
+# Modules
+on early-init
+    insmod /vendor/lib/modules/tp_ilitek.ko
+    insmod /vendor/lib/modules/tp_focaltech.ko
