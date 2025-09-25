@@ -63,6 +63,10 @@ ifeq ($(TARGET_DEVICE),fogorow)
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtbs/fogorow_dtb.img
 endif
 
+ifeq ($(TARGET_DEVICE),lamu)
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtbs/lamu_dtb.img
+endif
+
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_MKBOOTIMG_ARGS += --vendor_cmdline $(BOARD_VENDOR_CMDLINE)
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_PAGE_SIZE) --board ""

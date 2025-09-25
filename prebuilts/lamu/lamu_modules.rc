@@ -1,0 +1,7 @@
+# Modules
+on early-init
+    insmod /vendor/lib/modules/tui-common.ko
+    insmod /vendor/lib/modules/omnivision_tcm.ko
+    insmod /vendor/lib/modules/tp_ilitek.ko
+    insmod /vendor/lib/modules/gt1151.ko
+    insmod /vendor/lib/modules/chipone_tddi.ko

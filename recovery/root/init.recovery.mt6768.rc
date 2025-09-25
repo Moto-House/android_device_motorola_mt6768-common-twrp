@@ -1,5 +1,6 @@
 import /penangf_modules.rc
 import /fogorow_modules.rc
+import /lamu_modules.rc
 
 on init
     setprop sys.usb.configfs 1
